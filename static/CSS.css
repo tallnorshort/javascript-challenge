@@ -1,0 +1,283 @@
+
+  h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 32px;
+  }
+  
+  tr { color: rgb(255, 255, 255);
+       text-align: center;
+       margin-left:10px 
+  }
+  
+ label { color: rgb(255, 255, 255)}
+
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+
+{
+    box-sizing: border-box;
+    font-family: Ubuntu, sans-serif;
+  }
+  
+
+
+  .navbar-custom {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color:  #ffffff;
+}
+  .navbar {
+    padding: 5px;
+    margin: 0;
+  }
+  
+  /* This CSS styles the ufo icon in the navbar */
+  .nav-ufo {
+    position: absolute;
+    bottom: 5px;
+    left: 150px;
+    width: 35px;
+    color: white;
+  }
+  
+  /* Adding styles to the aside and filter form */
+  .ufo-form {
+    margin-top: 50px;
+  }
+  
+  .filters .panel-body {
+    padding: 0;
+  }
+  
+  .filters {
+    margin-top: 10px;
+  }
+  
+  select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    color: #8e979f;
+    outline: none;
+  }
+  
+  #table-area th {
+    text-align: center;
+    margin-top:10px;
+    margin-left:10px;
+  }
+  
+  #table-area th:first-child,
+  #table-area th:nth-child(2),
+  #table-area th:nth-child(6) {
+    min-width: 70px;
+  }
+  
+  .loader {
+    margin-top: 50px;
+  }
+  
+  .margin-top-50 {
+    margin-top: 50px;
+  }
+  
+  /* The styles for the parallax */
+  .hero {
+    position: relative;
+    height: 300px;
+    padding: 20px;
+    margin: 0;
+    background: black;
+    background-attachment: fixed;
+    background-position: bottom center;
+    background-size: cover;
+  }
+  
+  .hero h1 {
+    margin-top: 200px;
+    font-size: 0.1rem;
+    animation: title 1.2s forwards linear;
+  }
+  
+  .hero p {
+    font-size: 2rem;
+    opacity: 0;
+    animation: subtitle 1.2s forwards linear;
+    animation-delay: 1.2s;
+  }
+  
+  /* input placeholder color changes */
+  .control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8e979f;
+  }
+  
+  .control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8e979f;
+  }
+  
+  .control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8e979f;
+  }
+  
+  .control:-moz-placeholder {
+    /* Firefox 18- */
+    color: #8e979f;
+  }
+  
+  /* media queries which will only be activated at specific screen sizes */
+  @media (max-width: 800px) {
+    #table-area td {
+      font-size: 1em;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #table-area thead {
+      display: none;
+    }
+  
+    #table-area tr td:first-child {
+      font-size: 1.8em;
+      font-weight: bold;
+      background: #1b3146;
+    }
+  
+    #table-area tr td:last-child {
+      margin-bottom: 20px;
+    }
+  
+    #table-area tr td:last-child::after {
+      display: block;
+      width: 100%;
+      height: 1px;
+      margin-top: 20px;
+      content: " ";
+      background: aliceblue;
+    }
+  
+    #table-area td {
+      font-size: 1.25em;
+    }
+  
+    #table-area tbody td {
+      display: block;
+      text-align: center;
+    }
+  
+    #table-area tbody td::before {
+      display: block;
+      font-size: 1.4em;
+      font-weight: bold;
+      text-align: center;
+      content: attr(data-th);
+    }
+  
+    .hero h1 {
+      animation: smaller-title 1.2s forwards linear;
+    }
+  }
+  
+  /* keyframe animations which will be used to animate the title */
+  @keyframes title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font-size: 7.5rem;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes smaller-title {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      font-size: 5.5rem;
+      opacity: 1;
+    }
+  }
+  
+  @keyframes subtitle {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
